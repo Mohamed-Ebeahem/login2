@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login system</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container my-5" id="registrationForm" >
+        <div class="inner m-auto w-75 p-5">
+            <h1 class="text-center fw-bold">Smart Login System</h1>
+             <input type="text" id="loginName" class="form-control my-3" placeholder="Enter Your Name">
+            <input type="email" id="emailName" class="form-control my-3" placeholder="Enter Your Email">
+            <input type="password" placeholder="Enter Your Password" class="form-control my-3" id="passwordSignIn">
+            <button type="button" class="btn info my-3 btnn w-100" onclick="register()">Register</button>
+            <p class="text-white text-center">Already have an account? <a class="text-white" href="#" onclick="showLoginForm()">Log In</a></p> 
+        </div>
+    </div>
+    
+    <div class="container my-5" id="loginForm"  style="display: none;">
+        <div class="inner m-auto w-75 p-5">
+            <h1 class="text-center fw-bold">Smart Login System</h1>
+           
+            <input type="email" id="loginEmail" class="form-control my-3" placeholder="Enter Your Email">
+            <input type="password" placeholder="Enter Your Password" class="form-control my-3" id="loginPassword">
+            <button type="button" class="btn info my-3 btnn w-100" onclick="login()">Login</button>
+            <p class="text-white text-center">Don’t have an account? <a class="text-white" href="#" onclick="showRegistrationForm()">Sign Up</a></p> 
+        </div>
+    </div>
+    
+    <div class="container my-5" id="homePage" style="display: none;">
+        <div class="inner m-auto w-75 p-5">
+            <h1 class="text-center fw-bold">Welcome, <span id="displayName"></span>!</h1>
+            <button type="button" class="btn info my-3 btnn w-100" onclick="logout()">Log out</button>
+        </div>
+    </div>
+    
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
+
